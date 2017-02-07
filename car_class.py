@@ -1,5 +1,4 @@
-    
-  
+
 class Car(object):
   """This car class can be used to instantiate various vehicles. Each car has got different attributes:
   name: eg Toyota, Honda
@@ -15,11 +14,19 @@ class Car(object):
       self.name = "General"
     else:
       self.name = name
-      
+    
+    #establishing conditions for the number of doors  
     if name == "Koenigsegg" or name == "Agera R"":
       self.num_of_doors = 4
     else:
       self.num_of_doors = 2
+      
+    #establishing conditions for the number of wheels  
+    if car_type == "Trailer":
+      self.num_of_wheels = 8
+    else:
+      self.num_of_wheels = 4
+
 
       
       
