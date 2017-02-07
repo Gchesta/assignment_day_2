@@ -1,15 +1,12 @@
 class Student(object):
-	"""a school program that has been designed to show the total 
-	number of students in a school. It is also meant to carter for any admissions
-	and expusions
-	
+	"""a school program that has been designed to create new students in a school
+		
 	The attributes of a new student in Form 1 are:
 	
-	1. Admission Number 2. Name 3. KCPE Marks 4. Age 5. Hostel 6 Stream"""
+	1. Admission Number 2. Name 3. KCPE Marks 4. Age 5. Hostel 6 Stream 7. Reward points"""
 	
-	total_students = 0 #setting the initial student population at 0
 	
-	def __init__(self, admin_num, name, kcpe_marks, age, hostel, stream ):
+	def __init__(self, admin_num, name, kcpe_marks, age, hostel, stream, former_school, reward_points=0 ):
 		"""A funtion to initialize the new student"""
 		
 		self.admin_num = admin_num #student admission number
@@ -18,5 +15,18 @@ class Student(object):
 		self.age = age #student age
 		self.hostel = hostel #student's allocated hostel
 		self.stream = stream #students allocated 
+		self.former_school = former_school #the name of the student's fomer school
+		self.reward_points = reward_points #reward points based on the behavior of student in school
 	
+	def __hiv_scholarship(self, amount):
+		"""setting a private method to make use of encapsulation"""
+		self.amount = amount
+		
+ class Prefect(Student):
+	"""setting up a new prefect - employing inheritance"""
+	def __init__(self, admin_num, name, kcpe_marks, age, hostel, stream, former_school, reward_points=0, rank):
+		Student.__init__(self, admin_num, name, kcpe_marks, age, hostel, stream, former_school, reward_points=0 )
+		self.rank = rank
+		
+		
 	
