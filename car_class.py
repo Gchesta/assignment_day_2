@@ -8,8 +8,17 @@ class Car(object):
   
   def __init__(self, name, model, car_type):
     #a function to initialize the Car class
-    self.car_type = car_type
+    
     self.model = model
+    
+    #estblish a saloon car as the default non-trailer car
+    if car_type== "Trailer":
+      self.car_type = car_type
+    else:
+      self.car_type = "Saloon"
+    
+   
+   #establishing the default name "General" 
     if name == None:
       self.name = "General"
     else:
