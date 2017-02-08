@@ -1,8 +1,7 @@
-def fizz_buzz(entry):
-	if type(entry) != int or type(entry) != float: #eliminates non-numbers
-		raise TypeError("THE ENTRIES ARE WRONG!!")
 
-	elif entry % 3 == 0 and entry % 5 == 0: #tests for numbers that are divisible by both three and five
+def fizz_buzz(entry):
+	
+	if entry % 3 == 0 and entry % 5 == 0: #tests for numbers that are divisible by both three and five
 		return "FizzBuzz"
 
 	elif entry % 3 == 0: #tests for numbers that are divisible by three 
@@ -12,4 +11,4 @@ def fizz_buzz(entry):
 		return "Buzz"
 
 	else: 
-		return None
+		return entry
