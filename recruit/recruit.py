@@ -44,7 +44,12 @@ class ServiceMan(Recruit):
 		if self.grades < 25:
 			raise ValueError("A serviceman should have scored at least 25 points in the KCSE (D+ and above)")
 
+	def skills(self):
+		"""These are the skills that are required of a serviceman"""
+		return ["Teamworking", "Communication", "Act Fast", "Rapid Response", "Understand & Follow Instructions"]
 
+
+				
 
 class GsoCadet(Recruit):
 	"""setting up a new General Service Officer Cadet - employing inheritance"""
@@ -59,6 +64,10 @@ class GsoCadet(Recruit):
 		if self.grades < 25:
 			raise ValueError("A General Service Officer Cadet should have scored at least 25 points in the KCSE (D+ and above)")
 
+	def skills(self):
+		"""These are the skills that are required of a serviceman"""
+		return ["Teamworking", "Leadership" "Communication", "Act Fast", "Rapid Response", "Understand & Follow Instructions", "Analytical"]
+		
 class SoCadet(Recruit):
 	"""setting up a new Specialist Officer Cadet - employing inheritance"""
 	def __init__(self, full_name, age, national_id, military_id, profession):
@@ -72,6 +81,10 @@ class SoCadet(Recruit):
 		if self.profession not in needed_professions:
 			raise ValueError("Too bad. We currently don't have any need for " + self.profession)
 
+	def skills(self):
+		"""These are the skills that are required of a serviceman"""
+		return ["Teamworking", "Leadership" "Communication", "Act Fast", "Growth Mindset" "Problem Solving", "Analytical", "Creative"]
+
 class Constabulary(Recruit):
 	"""setting up a new Specialist Officer Cadet - employing inheritance"""
 	def __init__(self, full_name, age, national_id, military_id, experince):
@@ -82,7 +95,9 @@ class Constabulary(Recruit):
 		if self.age < 30 or self.age > 49:
 			raise ValueError("A constabulary must be between 30 and 49 years of age")
 
-
+	def skills(self):
+		"""These are the skills that are required of a serviceman"""
+		return ["Communication", "Act Fast", "Attention To Detail", "Understand & Follow Instructions"]
 
 			
 
