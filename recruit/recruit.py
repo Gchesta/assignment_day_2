@@ -54,7 +54,7 @@ class ServiceMan(Recruit):
 	def equip(self): 
 		#Demonstrating polymorphism
 		"""Equipping the serviceman"""
-		return ["9-Month Basic Training", "Service Uneliform", "M16 Relifles"]
+		return ["9-Month Basic Training", "Service Uniform", "M16 Rifles"]
 
 class GsoCadet(Recruit):
 	"""setting up a new General Service Officer Cadet - employing inheritance"""
@@ -78,7 +78,7 @@ class GsoCadet(Recruit):
 	def equip(self): 
 		#Demonstrating polymorphism
 		"""Equipping the GSO Cadet"""
-		return ["9-Month Basic Training", "BSC, Military Science", "Service Uneliform", "M16 Relifle"]
+		return ["9-Month Basic Training", "BSC, Military Science", "Service Uniform", "M16 Rifle"]
 	
 class SoCadet(Recruit):
 	"""setting up a new Specialist Officer Cadet - employing inheritance"""
@@ -100,7 +100,7 @@ class SoCadet(Recruit):
 	def equip(self): 
 		#Demonstrating polymorphism
 		"""Equipping the SO Cadet"""
-		return ["9-Month Basic Training", "Service Uneliform", "Professional Membership"]
+		return ["9-Month Basic Training", "Service Uniform", "Professional Membership"]
 
 class Constabulary(Recruit):
 	"""setting up a new Specialist Officer Cadet - employing inheritance"""
@@ -122,5 +122,5 @@ class Constabulary(Recruit):
 	def equip(self): 
 		#Demonstrating polymorphism
 		"""Equipping the SO Cadet"""
-		return ["Refresher Training", "Service Uneliform", "M16 Relifle"]
+		return ["Refresher Training", "Service Uniform", "M16 Rifle"]
 			
