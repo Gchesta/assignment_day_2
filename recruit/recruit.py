@@ -4,7 +4,6 @@ class Recruit(object)
 
 	"""
 	
-	
 	def __init__(self, full_name, age, national_id, military_id):
 		"""A function to initialize the new recruit"""
 		self.full_name = full_name #full_name of recruit
